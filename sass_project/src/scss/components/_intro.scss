@@ -1,0 +1,14 @@
+.intro {
+	height: 70vh;
+	text-align: center;
+	background-color: $background-grey;
+	background-image: url('../images/intro-ipad.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 200px;
+
+	&__heading {
+		padding: 100px 0 30px 0;
+	}
+
+}

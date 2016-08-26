@@ -1,0 +1,16 @@
+// sass comment - does not show up in css
+/* shows up in css! */
+
+// vendor
+@import 'vendor/css-reset';
+// global
+@import 'global/mixins';
+@import 'global/variables';
+@import 'global/fonts';
+@import "global/responsive";
+// components
+@import 'components/layout';
+@import 'components/header';
+@import "components/intro";
+@import "components/features";
+@import "components/testimonials";

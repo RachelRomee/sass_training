@@ -1,0 +1,25 @@
+@mixin flexcenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin button($border-color) {
+	border-radius: 50px;
+	padding: 20px 30px;
+	border: 1px solid $border-color;
+}
+
+@mixin font($font, $color, $size) {
+	font-family: $font;
+	color: $color;
+	font-size: $size;
+}
+
+@mixin grid($column, $gutter: 4%) {
+	$gutterwidth: ($column + 1) * $gutter;
+	width: (100% - $gutterwidth)/ $column;
+	display: inline-block;
+	float: left;
+	margin: 0 ($gutter/2);
+}

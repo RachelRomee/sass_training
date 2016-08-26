@@ -1,0 +1,21 @@
+.features {
+	text-align: center;
+	line-height: 32px;
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	.feature__column {
+		@include grid(3);
+
+		@include tablet {
+			display: block;
+		}
+		@include mobile {
+			display: block;
+			width: 100%;
+			padding: 0 30px;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.header {
+	height: 90vh;
+	width: 100vw;
+	background: $header-gradient;
+	color: white;
+	@include flexcenter;
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+
+	&__nav {
+		list-style-type: none;
+		padding: 40px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 92%;
+		font-size: 15px;
+		font-weight: 600;
+
+		li:nth-child(1) {
+			float: left;
+		}
+		li {
+			display: inline-block;
+			float: right;
+			margin: 0 10px;
+		}
+	}
+
+	&__body {
+		text-align: center;
+	}
+
+	&__heading {
+		margin: 0 0 20px 0;
+	}
+	&__subheading {
+		margin: 0 0 48px 0;
+	}
+	&__btn {
+		@include button(white);
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+}
